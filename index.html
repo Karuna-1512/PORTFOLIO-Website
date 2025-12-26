@@ -1,0 +1,178 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koppadi Karuna | Full-Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-flex">
+    <img src="assets/favicon.png" alt="Logo" style="width:40px; height:40px; margin-right:10px;"><h1 class="logo">Koppadi Karuna</h1>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero animated-hero" >
+  <div class="container" style="max-width: 800px; margin: auto;">
+    
+    <h1 style="font-size: 2.8rem; font-weight: 700; margin-bottom: 15px; line-height: 1.2;">
+  Hi, I'm 
+  <span style="font-family: 'Lucida', monospace; color: #00aaff; font-weight: 900; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+    Koppadi Karuna
+  </span>
+</h1>
+<p class="typing" style="font-size: 1.3rem; color: #111111; font-weight: 700; font-style: italic; margin-bottom: 25px; line-height: 1.5;">
+  Full-Stack Developer | AI Enthusiast| Tech Innovator | 
+</p>
+
+
+    <p class="hero-desc" style="font-size: 1.1rem; color: #333; line-height: 1.6; max-width: 700px; margin: auto;">
+      I design and develop intelligent, scalable, and responsive web applications using Python, Django, React, and AI technologies.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="assets/resume.png" class="btn secondary" download>Download Resume</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/Karuna-1512" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/koppadi-karuna-560230333" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:koppadikaruna1512@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      Second-year B.Tech CSE (AI & ML) student passionate about building end-to-end software solutions. Strong foundation in backend development, modern frontend frameworks, and artificial intelligence.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+     <div class="skill"><img src="https://cdn.jsdelivr.net/npm/devicon@latest/icons/django/django-original.svg" alt="Django"><span>Django</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"><span>Angular</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma (UI/UX)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/autovilla.png" alt="AutoVilla Project">
+        <div class="project-info">
+          <h3>AutoVilla – Vehicle Marketplace</h3>
+          <p>A Django-based vehicle marketplace allowing users to explore, search, and filter cars and bikes for sale or rent. Features authentication, user dashboards, and responsive UI.</p>
+          <ul>
+            <li>Django Backend</li>
+            <li>Search & Filter System</li>
+            <li>User Authentication</li>
+            <li>Responsive Design</li>
+          </ul>
+          <a href="https://github.com/Karuna-1512/AutoVilla" class="btn primary" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+      <!-- Add more project-cards here if needed -->
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+      <img src="assets/certificates/cert1.png" alt="Certification 1">
+      <img src="assets/certificates/cert2.jpg" alt="Certification 2">
+      <img src="assets/certificates/cert3.jpg" alt="Certification 3">
+      <img src="assets/certificates/cert4.jpg" alt="Certification 4">
+      <img src="assets/certificates/cert5.jpg" alt="Certification 5">
+      <img src="assets/certificates/cert6.jpg" alt="Certification 6">
+      <img src="assets/certificates/cert7.jpg" alt="Certification 7">
+      <img src="assets/certificates/cert8.jpg" alt="Certification 8">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="padding: 120px 20px; background: linear-gradient(135deg, #e0f7ff 0%, #f8f9fa 100%); text-align: center;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 style="font-size: 2.8rem; margin-bottom: 20px; color: #111; font-weight: 700;">Get In Touch</h2>
+    <p style="font-size: 1.3rem; margin-bottom: 40px; color: #333; max-width: 600px; margin-left: auto; margin-right: auto;">
+      I'm open to discussing new opportunities, collaborations, or just having a chat about tech and development. Feel free to reach out!
+    </p>
+    <p style="font-size: 1.4rem; margin-bottom: 50px;">
+      Email: <a href="mailto:koppadikaruna1512@gmail.com" style="color: #00aaff; text-decoration: none; font-weight: 600; border-bottom: 2px solid #00aaff; padding-bottom: 3px; transition: all 0.3s;">koppadikaruna1512@gmail.com</a>
+    </p>
+    <div class="social-icons" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+      <a href="https://github.com/Karuna-1512" target="_blank" style="font-size: 2.8rem; color: #111; transition: all 0.4s ease; display: inline-block;">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/koppadi-karuna-560230333" target="_blank" style="font-size: 2.8rem; color: #111; transition: all 0.4s ease; display: inline-block;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:koppadikaruna1512@gmail.com" style="font-size: 2.8rem; color: #111; transition: all 0.4s ease; display: inline-block;">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <style>
+      /* Hover effects for social icons */
+      #contact .social-icons a:hover {
+        color: #00aaff !important;
+        transform: translateY(-8px) scale(1.1);
+      }
+      #contact .social-icons a i {
+        display: block;
+      }
+    </style>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Koppadi Karuna. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
